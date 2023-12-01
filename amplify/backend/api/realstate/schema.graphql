@@ -1,0 +1,19 @@
+type Property @model @auth(rules: [{allow: public}]) {
+  id: ID!
+}
+
+type Realstate @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  description: String
+  type: String!
+  streetAddress: String
+  city: String!
+  country: String!
+  zipcode: Int
+  price: Int!
+  area: Int
+  bedrooms: Int!
+  bathrooms: Int!
+  images: [String!]!
+}
+ 
